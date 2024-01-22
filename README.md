@@ -1,5 +1,7 @@
 # Internet-of-things demo/teaching setup.
 
+## Original objectives:
+
 ▪ Start from RISC-V simple
 
 ▪ Add some models of sensors and actuators
@@ -10,9 +12,8 @@
 
 ▪ Simulate the system under various disturbances
 
+## Key pieces:
 
-
-## Key pieces: ##
 ▪ Model a sensor in Simics
 
 ▪ Put sensor into memory map
@@ -29,12 +30,11 @@
 
 ▪ ”Kick” the physics model
 
-
 # What is done:
 
 1. We installed Simics on Windows and Linux.
-2. We acquired the riscv toolchain from buildroot by compiling it.
-3. We loaded riscv machine in Simics.
+2. We acquired the RISC-V toolchain from buildroot by compiling it.
+3. We loaded RISC-V machine in Simics.
 4. We compiled and tested the baremetal snake example.
 5. We read the Simics documentation.
 6. We created a skeleton device in dml with read function that returned the register value.
@@ -50,7 +50,7 @@
 
 1. Install Simics on Linux to avoid having to install the mingw compiler. Link to Simics instalation guide: https://www.intel.com/content/www/us/en/developer/articles/guide/simics-simulator-installation.html.
 2. Create a new Simics project.
-3. To create a riscv system you can use prebuilt images from "linux-images.zip" or build it with buildroot.
+3. To create a RISC-V system you can use prebuilt images from "linux-images.zip" or build it with buildroot.
 4. If you want to use Buildroot:
    
    * Clone the buildroot using: "git clone https://github.com/buildroot/buildroot.git".
@@ -97,5 +97,12 @@
 
 # What we don't know:
 
-* How to made a working application and how to transport it to the riscv machine.
-* How to create an actuator.
+* How to make a working application and how to transport it to the RISC-V machine.
+* How to create an actuator for simics.
+
+# What we learned:
+
+* How to use English in work environment. 
+* How to work in the group.
+* How to compile C programs for RISC-V.
+* How to use Simics and how does it work.
